@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -10,9 +11,9 @@ const Header = () => {
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-5 h-5 text-lime-500 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                     </label>
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow  rounded-box w-52 border-2	border-lime-500 bg-slate-800">
-                        <li><a className='text-lime-500 font-bold'>Home</a></li>
+                        <Link to='/'><li><a className='text-lime-500 font-bold'>Home</a></li></Link>
                         <li><a className='text-lime-500 font-bold'>Articles</a></li>
-                        <li><a className='text-lime-500 font-bold'>Education</a></li>
+                        <Link to='/education'><li><a className='text-lime-500 font-bold'>Education</a></li></Link>
                         <li><a className='text-lime-500 font-bold'>Research Interest</a></li>
                     </ul>
                     </div>

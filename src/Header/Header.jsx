@@ -12,7 +12,7 @@ const Header = () => {
                     </label>
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow  rounded-box w-52 border-2	border-lime-500 bg-slate-800">
                         <Link to='/'><li><a className='text-lime-500 font-bold'>Home</a></li></Link>
-                        <li><a className='text-lime-500 font-bold'>Articles</a></li>
+                        <Link to='articles'><li><a className='text-lime-500 font-bold'>Articles</a></li></Link>
                         <Link to='/education'><li><a className='text-lime-500 font-bold'>Education</a></li></Link>
                         <li><a className='text-lime-500 font-bold'>Research Interest</a></li>
                     </ul>

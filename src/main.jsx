@@ -9,6 +9,7 @@ import {
 import Main from './Layouts/Main.jsx';
 import Home from './Pages/Home/Home.jsx';
 import Education from './Pages/Education/Education.jsx';
+import Articles from './Pages/Articales/Articles.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -21,7 +22,11 @@ const router = createBrowserRouter([
       {
         path: "/education",
         element: <Education></Education>
-      }
+      },
+      {
+        path: "/articles",
+        element: <Articles></Articles>
+      },
     ]
   },
 ]);
